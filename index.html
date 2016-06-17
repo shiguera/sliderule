@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Slide Rule</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,6 +20,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		
 	</head>
 	<body>
 		<div class="reveal">
@@ -32,7 +33,8 @@
 					</div>
 					<div style="width: 800px; margin-left: auto; margin-right: auto">
 						<div style='float:left;'>
-							<img src="img/nucio.jpg" width="260" />
+							<img src="img/Slide_rule_scales_front.jpg" width="300" /><br/>
+							<img src="img/Slide_rule_scales_rear.jpg" width="300" /><br/>
 						</div>
 						<div style='float:right; margin-top: 80px'>
 							<h3>La regla de cálculo</h3>
@@ -42,10 +44,221 @@
 					</div>
 					<div style="clear: both"></div>
 					<a href="http://shiguera.github.io/sliderule">http://shiguera.github.io/sliderule</a>
-					
 				</section>
 
-				<section>Slide 2</section>
+				<!-- Libro Nuccio Ordine -->
+				<section>
+					<div style="width: 1000px; margin-left: auto; margin-right: auto">
+						<div style='float:left;'>
+							<img src="img/nucio.jpg" width="250" />
+						</div>
+						<div style='float:right; margin-top: 1px; width:650px'>
+							<p>Hui-zi dijo a Zhuang-zi: <span style='font-style: italic; color: #0000ff'>La doctrina de su Merced no es útil para nada</span></p>
+							<p>Zhuang-zi le contestó: <span style='font-style: italic; color: #0000ff'>Sólo cuando se conoce la inutilidad puede comenzarse a hablar de utilidad</span></p>
+							<small><p>Zhuang-zi, siglo IV A.C.</p></small>
+							<hr>
+							<p><span style='font-style: italic; color: #0000ff'>Al percibir la sutil utilidad de lo inutil, el hombre entra en el reino del arte</span></p>
+							<small><p>Kakuzo Okakura, El libro del té, 1906</p></small>
+						</div>
+					</div>					
+				</section>
+
+				<section>
+					<p>Consideramos a las matemáticas como una herramienta muy útil, pero en realidad son puro placer intelectual, y muchos de sus logros se generan desde la emoción y desde el desafío que nos supone resolver cuestiones aparentemente inútiles</p>
+					<small>Josep Manel Marrasé, 'La belleza de las matemáticas'</small>
+				</section>
+				
+				<section>
+					<h3>Logaritmos</h3>
+					<div style="background-color: #cacaca; padding: 10px; ">
+						<p>$x = log_{10}(a) \Leftrightarrow a = 10^x$</p>
+					</div>
+					<p>$log(a \times b) = log(a) + log(b)$</p>
+					<p>$log(\frac{a}{b}) = log(a) - log(b)$</p>
+					<p>$log_{10}(10^n) = n$</p>
+					<p>$log(1) = 0$</p>
+					<p>$log(a^n) = n\times log(a)$</p>	
+				</section>
+				
+				<section>
+					<h3>Construcción de la regla de cálculo</h3>
+					<img src="img/construccion.png" width="900">
+				</section>
+				<section>
+				<h3>Multiplicación con las escalas C y D</h3>
+				<h4>Fundamento teórico: suma de segmentos</h4>
+				<img src="img/multiplicacion.png" width="900">
+				<p>Se coloca el 1 de la escala C sobre el primer factor de la escala D y se lee el resulado en la escala D bajo el segundo factor de la escala C</p>
+				</section>
+
+				<section>
+					<h3>Ejemplo de multiplicación</h3>
+					<p>$0.025 \times 1500 $</p>
+					<div style='background-color: #cacaca; padding: 10px'>
+						<p>Podemos hacer : $2.5 \times 10^{-2} \times 1.5 \times 10^3 = 2.5 \times 1.5\times 10^1$</p>
+						<p>En la regla operamos $2.5 \times 1.5 = 3.75$</p>
+						<p>El resultado final será:</p>
+						<p>$3.75 \times 10^1 = 37.5$ </p>
+					</div>
+					<a href="http://www.antiquark.com/sliderule/sim/virtual-slide-rule.html" target="_blank"><img src="img/sliderule.png" style='height: 30px'/></a>
+				</section>
+
+				<section>
+				<h3>Multiplicación con el 10 de la escala C</h3>
+				<p>Cuando situando el 1 de la escala C sobre el primer factor en la escala D, se nos sale por la derecha el segundo factor, se coloca 10 de la escala C sobre el primer factor en D y se lee el resultado bajo el 1 de la escala C</p>
+				<img src="img/multiplicacion_10.png" width="900">
+				<p><span>Si el resultado lo leemos bajo el 1 de la escala C, el resultado obtenido está dividido por 10</span></p>
+				</section>
+
+				<section>
+					<h3>Ejemplo de multiplicación con el 10 de la escala C</h3>
+					<p>$0.025 \times 4500 $</p>
+					<div style='background-color: #cacaca; padding: 10px'>
+						<p>Podemos hacer : $2.5 \times 10^{-2} \times 4.5 \times 10^3 = 2.5 \times 4.5\times 10^1$</p>
+						<p>En la regla operamos: $2.5 \times 4.5 = 1.125 \times 10 = 11.25$</p>
+						<p>El resultado final será:</p>
+						<p>$11.25 \times 10^1 = 112.5$ </p>
+					</div>
+					<a href="http://www.antiquark.com/sliderule/sim/virtual-slide-rule.html" target="_blank"><img src="img/sliderule.png" style='height: 30px'/></a>
+				</section>
+
+				<section>
+					<h3>Número de cifras enteras del resultado: regla práctica</h3>
+					<p><span style='color: red'>El número de cifras enteras del resultado es la suma de las de los operandos, menos una si se utiliza el 1 de la escala C</span></p>
+					<ul>
+						<li>123 = 3 cifras enteras</li>
+						<li>0.123 = 0 cifras enteras</li>
+						<li>0.00123 = -2 cifras enteras</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Multiplicación con las escalas C y D</h3>
+					<h4>Procedimiento operativo</h4>
+					<p>Se van multiplicando las cifras ajustadas al intérvalo entre 1 y 10, llevando la cuenta de las veces que se utiliza el 1 de la escala C para calcular el producto</p>
+					<p><span style='color: red'>El número de <span style='font-weight: bold'>cifras enteras</span> del producto es la suma de las cifras enteras de los operandos menos 1 multiplicado por el número de veces que se haya utilizado el 1 de la escala C para calcular el producto</span></p>
+				</section>
+				<section>
+					<h3>Ejemplo de multiplicación con las escalas C y D</h3>
+					<div style='background-color: #cacaca; padding: 10px'>
+						<p>$\mathbf{2.3 \times 0.0045 \times 1200}$</p>
+						<p>Se opera $ 2.3 \times 4.5 \times 1.2$</p>
+						<p>El resultado es $1.24$ y se utiliza una vez el $1$ de la escala C</p>
+						<p>El número de cifras enteras del resultado: $1 - 2 + 4 -1 \times (1) = 2$</p>
+						<p>El resultado final es:</p>
+						<p>$\mathbf{12.4}$</p>
+					</div>
+					<a href="http://www.antiquark.com/sliderule/sim/virtual-slide-rule.html" target="_blank"><img src="img/sliderule.png" style='height: 30px'/></a>
+				</section>
+
+				<section>
+					<h3>División con las escalas C y D</h3>
+					<img src="img/division.png" width="900" >
+				</section>
+				<section>
+					<h3>División con las escalas C y D</h3>
+					<div>
+						<img src="img/division.png" width="500" style='float:left; margin-right: 10px'>
+						<p><span>Si el divisor es menor que el dividendo, el resultado bajo el 1 de la escala C</span></p>
+					</div>
+					<hr style='clear: both;'>
+					<div>
+						<img src="img/division_10.png" width="500" style='float: left; margin-right: 10px; margin-top: 50px'>
+						<p><span>Si el divisor es mayor que el dividendo, el resultado bajo el 10 de la escala C y multiplicado por 10</span></p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Número de cifras enteras de la división</h3>					
+					<p><span style='color: red'>El numero de cifras enteras de la división serán las del dividendo menos las del divisor, sumando una cifra si el resultado se obtiene bajo el 1 de la escala C</span></p>
+				</section>
+
+				<section>
+					<h3>Ejemplo de división</h3>
+					<p>$\frac{0.4}{25}$</p>
+					<div style='background-color: #cacaca; padding: 4px'>
+						<p><span style='color: red'>Operando potencias de diez:</span></p>
+						<p>$\frac{0.4}{25} = \frac{4 \times 10^{-1}}{2.5 \times 10^1} = \frac{4}{2.5} \times 10^{-2} = 1.6 \times 10^{-2} = 0.016$</p>
+					</div>
+					<div style='background-color: #cacaca; padding: 4px; margin-top: 8px'>
+						<p><span style='color: red'>Calculando cifras enteras del resultado:</span></p>
+						<p>En la regla: $\frac{4}{2.5} = 1.6$</p>
+						<p>Número de cifras enteras: $0 - 2 + 1 = -1$</p>
+						<p>Resultado: $0.016$</p>
+					</div>
+					<a href="http://www.antiquark.com/sliderule/sim/virtual-slide-rule.html" target="_blank"><img src="img/sliderule.png" style='height: 30px'/></a>
+				</section>
+				<!-- Historia -->
+				<section>
+					<h3>Cronología de la regla de cálculo</h3>
+					<ul>
+						<li>1617 - John Napier inventa los "logos" + "arithmos"</li>
+						<li>1622 - William Oughtred inventa la regla de cálculo</li>
+						<li>1657 - Seth Partridge desarrolla la reglilla deslizante</li>
+						<li>1675 - Isaac Newton propone utilizar el cursor</li>
+						<li>1722 - John Warner: escalas de cuadrados y cubos</li>
+						<li>1815 - Peter Roget inventa la escala log-log </li>
+						<li>1851 - Amedeé Mannheim estandariza escalas A,B,C,D</li>
+						<li>1870 - Dennert and Pape (makers of Aristo), and Faber (later Faber-Castell).</li>
+						<li>S XX - Incorporación nuevas escalas, mejora en la precisión</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Ingeniería con regla de cálculo</h3>
+					<div style='float:right; width: 650px; margin-right: 10px'>
+						<ul>
+							<li>Máquina de vapor (1775)</li>
+							<li>Torre Eiffel (1889)</li>
+							<li>Empire State Building (1931)</li>
+							<li>Presa Hoover (1936)</li>
+							<li>Golden Gate (1937)</li>
+							<li>Bomba atómica (1945)</li>
+							<li>Redstone Rocket (1958)</li>
+							<li>Misiones Apollo (1969-1970)</li>
+							<li>F-16 (1970-1978)</li>
+						</ul>				
+					</div>
+					<div>
+						<img src="img/goldengate.png" style='float: right; width: 250px'>
+					</div>
+				</section>
+
+				<section>
+					<h3>Características únicas de la regla de cálculo</h3>
+					<div style='float: left; margin-right: 10px; width: 270px'>
+						<img src="img/regla.png" style="width: 300px">
+					</div>
+					<div style='width: 500px; float: right; margin-top: 30px'>
+						<ul>
+							<li>Simplicidad elegante</li>
+							<li>Dimensiones armónicas</li>
+							<li>Total transparencia</li>
+							<li>Rango y precisión ingeniería</li>
+							<li>Fácil de aprender y de operar</li>
+							<li>Computación paralela</li>
+							<li>Herramienta didáctica</li>
+						</ul>	
+					</div>
+					<div style='clear: both; background-color: #cacaca; color: red;'>You hold mathematical magic in your hands!</div>
+				</section>
+				
+				<section>
+					<h1>THE END</h1>
+					<h4>BY Santiago Higuera</h4>
+					<p><a href="mailto:santiago.higuera@upm.es">santiago.higuera@upm.es</a></p>
+					<a href="http://shiguera.github.io/sliderule">http://shiguera.github.io/sliderule</a>
+          <p style='clear:both'>
+            <small>Esta obra está bajo una Licencia<br/><a rel="license"
+            href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">
+              Creative Commons Atribución-NoComercial-CompartirIgual
+              3.0 Unported</a></small>
+          </p>
+            <a rel="license"
+            href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">
+            <img src="img/cc-by-nc-sa.png" class="no-back" width='150'></a>
+				</section>
+
 			</div>
 		</div>
 
@@ -57,8 +270,14 @@
 			Reveal.initialize({
 				history: true,
 
+				math: {
+			        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+			        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+			  },
+
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
+					{ src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
